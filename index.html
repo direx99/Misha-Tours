@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Misha Tours - Your Sri Lankan Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Top Bar with Bootstrap Navbar -->
+    <header class="top-bar navbar navbar-expand-lg navbar-custom sticky-top">
+      <a class="navbar-brand font-weight-bold" href="#">Misha Tours</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary ml-2" onclick="scrollToContact()">
+          Book Now
+        </button>
+      </div>
+    </header>
+
+    <!-- Cover Section -->
+    <section
+      id="home"
+      class="cover-section text-center text-white d-flex align-items-center justify-content-center"
+    >
+      <div class="container">
+        <h1>Misha Tours</h1>
+        <p>Your trusted travel guide to explore the beauty of Sri Lanka</p>
+        <button class="btn btn-warning" onclick="scrollToAbout()">
+          Plan Your Trip
+        </button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5 text-center">
+      <div class="container">
+        <h2>About the Business</h2>
+        <p>
+          Misha Tours offers immersive and personalized tour experiences across
+          Sri Lanka, guided by local experts who share the country's beauty,
+          culture, and hidden gems.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section py-5 text-center">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="row">
+          <!-- Bootstrap responsive grid for images -->
+          <div class="col-sm-6 col-md-4 mb-4">
+            <img
+              src="images/1.jpg"
+              class="img-fluid rounded"
+              alt="Sigiriya Rock"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <img
+              src="images/2.jpg"
+              class="img-fluid rounded"
+              alt="Sigiriya Rock"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <img
+              src="images/3.jpg"
+              class="img-fluid rounded"
+              alt="Sigiriya Rock"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <img
+              src="images/4.jpg"
+              class="img-fluid rounded"
+              alt="Sigiriya Rock"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <img
+              src="images/5.jpg"
+              class="img-fluid rounded"
+              alt="Sigiriya Rock"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <img
+              src="images/6.jpg"
+              class="img-fluid rounded"
+              alt="Sigiriya Rock"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <img
+              src="images/7.jpg"
+              class="img-fluid rounded"
+              alt="Sigiriya Rock"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <img
+              src="images/8.jpg"
+              class="img-fluid rounded"
+              alt="Sigiriya Rock"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <img
+              src="images/9.jpg"
+              class="img-fluid rounded"
+              alt="Sigiriya Rock"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <img
+              src="images/10.jpg"
+              class="img-fluid rounded"
+              alt="Sigiriya Rock"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <img
+              src="images/11.jpg"
+              class="img-fluid rounded"
+              alt="Sigiriya Rock"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4">
+            <img
+              src="images/12.jpg"
+              class="img-fluid rounded"
+              alt="Sigiriya Rock"
+            />
+          </div>
+
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Reviews Section -->
+    <section id="reviews" class="reviews-section py-5 bg-light text-center">
+      <div class="container">
+        <h2>Client Reviews</h2>
+        <div id="reviewsCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>"Amazing experience with Misha Tours!" - Sarah, UK</p>
+            </div>
+            <div class="carousel-item">
+              <p>"A wonderful and unforgettable journey!" - John, USA</p>
+            </div>
+            <div class="carousel-item">
+              <p>
+                "Misha Tours showed us the best of Sri Lanka." - Aiko, Japan
+              </p>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#reviewsCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#reviewsCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <h2 class="text-center my-4">Our Location</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.8130131280619!2d79.94579297897826!3d6.615575313692795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae237a355aeb8e5%3A0xc2eeac3dfec2365b!2sRestaurant%20Weranda!5e0!3m2!1sen!2slk!4v1730303589399!5m2!1sen!2slk"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5 text-center">
+      <div class="container">
+        <h2 class="text-white">Contact Us</h2>
+        <p class="text-light mb-4">
+          Reach out to us through any of the following channels.
+        </p>
+
+        <div class="contact-details mb-4">
+          <p class="text-white">
+            Address: No.301 Mahawaskaduwa Waskaduwa 12580 , Sri Lanka
+          </p>
+          <p class="text-white">Phone: +94 71 342 3976</p>
+          <p class="text-white">Email: info@mishatours.lk</p>
+        </div>
+
+        <div class="contact-icons d-flex justify-content-center mb-4">
+          <a
+            href="https://www.facebook.com/YourPage"
+            class="contact-icon"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+          <a
+            href="https://m.me/YourMessengerID"
+            class="contact-icon"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-messenger"></i> Messenger
+          </a>
+          <a
+            href="https://wa.me/+94713423976"
+            class="contact-icon"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="tel:+94123456789" class="contact-icon">
+            <i class="fas fa-phone-alt"></i> Call Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section text-center py-3">
+      <div class="container">
+        <p class="footer-text mb-0">
+          Developed by
+          <a
+            href="https://www.linkedin.com/in/your-profile"
+            target="_blank"
+            class="developer-link"
+            >Dinith Hasaranga Perera</a
+          >
+          &copy; 2024 Misha Tours. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  color: #333;
+}
+
+/* Cover Section */
+.cover-section {
+  height: 100vh;
+  background: url("cover.png") center/cover no-repeat;
+}
+
+.navbar-custom {
+  background-color: #ffffff; /* Black background */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #000000 !important; /* Yellow text */
+}
+
+/* Optional: Hover effect for links */
+.navbar-custom .nav-link:hover {
+  color: #000000 !important; /* Slightly brighter yellow on hover */
+}
+.cover-section h1 {
+  font-size: 5rem;
+  text-shadow: 2px 2px 5px rgba(10, 2, 10, 1); /* Adjust for stronger effect */
+  margin-top: -10rem;
+}
+
+.cover-section button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+}
+
+/* About Section */
+.about-section {
+  background: #f9f9f9;
+}
+
+/* Gallery Section */
+.gallery-section img {
+  transition: transform 0.3s ease;
+}
+
+.gallery-section img:hover {
+  transform: scale(1.05);
+}
+
+/* Reviews Section */
+.reviews-section .carousel-item {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #2c2c2c; /* Dark gray background */
+  color: #d3d3d3; /* Light gray text */
+  padding: 3rem 0;
+}
+
+.contact-section h2 {
+  color: #fff; /* White heading */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contact-details p {
+  color: #d3d3d3; /* Light gray text for address and contact details */
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-icon {
+  color: #d3d3d3; /* Light gray text */
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-icon i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.contact-icon:hover {
+  color: #fff;
+}
+
+.map-section {
+  padding: 2rem 0;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: #000; /* Black background */
+  color: #ffffff; /* Yellow text for contrast */
+}
+
+.footer-text {
+  font-size: 1rem;
+}
+
+.developer-link {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.developer-link:hover {
+  color: #9e9e9e; /* Dark orange on hover */
+}
