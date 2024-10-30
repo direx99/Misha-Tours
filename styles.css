@@ -97,12 +97,10 @@ body {
 /* Gallery Section */
 .gallery-section img {
   transition: transform 0.3s ease, filter 0.3s ease;
-  filter: grayscale(80%);
 }
 
 .gallery-section img:hover {
   transform: scale(1.05);
-  filter: grayscale(0%);
 }
 
 /* Reviews Section */
